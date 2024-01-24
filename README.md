@@ -75,3 +75,5 @@ Nest is [MIT licensed](LICENSE).
 
 # nest generate module
 # nest generate controller messages/messages --flat
+
+# data transfer object(dto)
