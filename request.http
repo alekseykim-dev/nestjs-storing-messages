@@ -1,0 +1,15 @@
+### List all messages
+GET http://localhost:3000/messages
+
+
+### POST messages
+POST http://localhost:3000/messages
+content-type: application/json
+
+{
+	"content": "Hey!!!"
+}
+
+
+### GET specific messsage
+GET http://localhost:3000/messages/123
