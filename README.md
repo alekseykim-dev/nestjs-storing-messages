@@ -72,8 +72,10 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](LICENSE).
 
-
+# npm install -g @nestjs/cli
 # nest generate module
 # nest generate controller messages/messages --flat
+# npm install class-validator
+# npm install class-transformer
 
 # data transfer object(dto)
