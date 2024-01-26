@@ -13,10 +13,20 @@ import { MessagesService } from './messages.service';
 @Controller('messages')
 export class MessagesController {
   // messagesService: MessagesService;
-  constructor(public messagesService: MessagesService) {
+  constructor(
+    public messagesService: MessagesService,
+    // public messagesService2: MessagesService,
+    // public messagesService3: MessagesService,
+    // only 1 instance of Service is created regardless of how many copies we ask for  there are other ways to avoid this limitation
+
+    
+    // dependency injection and inversion control helps during testing the app
+  ) 
+  {
+    // console.log(messagesService === messagesService2)
+    // console.log(messagesService === messagesService3)
     // DO NOT DO THIS IN REAL PROJECT
     // USE DEPENDENCY INJECTION
-
     //line 15 and 21 are commented out because of line 7 (public)
     // this.messagesService = new MessagesService();
   }
@@ -51,4 +61,3 @@ export class MessagesController {
     return this.messagesService.deleteAll();
   }
 }
- 
