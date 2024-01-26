@@ -7,12 +7,12 @@ POST http://localhost:3000/messages
 content-type: application/json
 
 {
-	"content": "my name is Alex"
+	"content": "Message after adding dependency injection"
 }
 
 
 ### GET specific messsage
-GET http://localhost:3000/messages/12222
+GET http://localhost:3000/messages/4142
 
 
 

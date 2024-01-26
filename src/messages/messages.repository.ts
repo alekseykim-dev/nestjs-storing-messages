@@ -1,4 +1,7 @@
+import { Injectable } from '@nestjs/common';
+
 import { readFile, writeFile } from 'fs/promises';
+@Injectable()
 
 export class MessagesRepository {
   async findOne(id: string) {
@@ -20,10 +23,6 @@ export class MessagesRepository {
     const messages = JSON.parse(contents);
 
     const id = Math.floor(Math.random() * 999);
-
-    // {
-    // 	12: {id: 12, content: 'asdf'}
-    // }
 
     messages[id] = { id, content };
 
